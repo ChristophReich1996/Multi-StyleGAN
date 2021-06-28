@@ -37,3 +37,14 @@ blocks. The generator predicts a sequence of three consecutive images for both
 the BF and GFP channels. The U-Net discriminator distinguishes between real and
 a fake input sequences by making both a scalar and a pixel-wise real/fake prediction.
 Standard residual discriminator blocks in gray and non-local blocks in blue.
+
+
+<img src="/github/Dual-styled-convolutional_block.png"  alt="1" width = 451px height = 221px ><br/>
+Dual-styled-convolutional block of the Multi-StyleGAN. The incoming latent
+vector w is transformed into the style vector s by a linear layer. This style vector modulates (mod) the convolutional weights <img src="https://render.githubusercontent.com/render/math?math=\theta_{b}"> and <img src="https://render.githubusercontent.com/render/math?math=\theta_{g}">, which are optionally demodulated
+(demod) before convolving the (optionally bilinearly upsampled) incoming features
+of the previous block. Learnable biasses (<img src="https://render.githubusercontent.com/render/math?math=b_{b}"> and <img src="https://render.githubusercontent.com/render/math?math=b_{g}">) and channel-wise Gaussian noise
+(<img src="https://render.githubusercontent.com/render/math?math=\mathcal{N}">) scaled by a learnable constant (cb and cg), are added to the features. The final
+output features are obtained by applying a leaky ReLU activation.
+
+
