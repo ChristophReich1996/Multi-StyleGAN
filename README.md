@@ -2,8 +2,8 @@
 [![arXiv](https://img.shields.io/badge/stat.ML-arXiv%3A2106.08285-B31B1B.svg)](https://arxiv.org/abs/2106.08285)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ChristophReich1996/Multi-StyleGAN/blob/master/LICENSE)
 
-<img src="/github/prediction_ema_100_bf_0.png"  alt="1" width = 384px height = 128px >   <img src="/github/prediction_ema_100_bf_12.png"  alt="1" width = 384px height = 128px ><br/>
-<img src="/github/prediction_ema_100_gfp_0.png"  alt="1" width = 384px height = 128px >  <img src="/github/prediction_ema_100_gfp_12.png"  alt="1" width = 384px height = 128px >
+<img src="/github/prediction_ema_100_bf_0.png"  alt="1" width = 288px height = 96px >   <img src="/github/prediction_ema_100_bf_12.png"  alt="1" width = 288px height = 96px ><br/>
+<img src="/github/prediction_ema_100_gfp_0.png"  alt="1" width = 288px height = 96px >  <img src="/github/prediction_ema_100_gfp_12.png"  alt="1" width = 288px height = 96px >
 
 **[Christoph Reich](https://github.com/ChristophReich1996), [Tim Prangemeier](https://www.bcs.tu-darmstadt.de/bcs_team/prangemeiertim.en.jsp), [Christian Wildner](https://www.bcs.tu-darmstadt.de/bcs_team/wildnerchristian.en.jsp) & [Heinz Koeppl](https://www.bcs.tu-darmstadt.de/bcs_team/koepplheinz.en.jsp)**
 
