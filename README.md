@@ -31,7 +31,7 @@ experimental techniques such as online monitoring or control of cells.*
 
 <img src="/github/Multi-StyleGAN.png"  alt="1" width = 617px height = 176px ><br/>
 Architecture of Multi-StyleGAN. The style mapping network <img src="https://render.githubusercontent.com/render/math?math=f"> (in purple)
-transforms the input noise vector <img src="https://render.githubusercontent.com/render/math?math=z\sim \mathcal{N}_{512}(0, 1)"> into a latent vector <img src="https://render.githubusercontent.com/render/math?math=w\in\mathbb{W}">, which in
+transforms the input noise vector <img src="https://render.githubusercontent.com/render/math?math=z\sim \mathcal{N}_{512}(0, 1)"> into a latent vector <img src="https://render.githubusercontent.com/render/math?math=w\in\mathcal{W}">, which in
 turn is incorporated into each stage of the generator by three dual-style-convolutional
 blocks. The generator predicts a sequence of three consecutive images for both
 the BF and GFP channels. The U-Net discriminator distinguishes between real and
