@@ -25,3 +25,15 @@ dependencies, such as cell morphology, growth, physical interactions, as
 well as the intensity of a fluorescent reporter protein. An immediate application is to generate additional training and validation data for feature
 extraction algorithms or to aid and expedite development of advanced
 experimental techniques such as online monitoring or control of cells.*
+
+## Method
+
+
+<img src="/github/Multi-StyleGAN.png"  alt="1" width = 617px height = 176px ><br/>
+Architecture of Multi-StyleGAN. The style mapping network <img src="https://render.githubusercontent.com/render/math?math=f"> (in purple)
+transforms the input noise vector <img src="https://render.githubusercontent.com/render/math?math=z\sim \mathcal{N}_{512}(0, 1)"> into a latent vector <img src="https://render.githubusercontent.com/render/math?math=w\in\mathbb{W}">, which in
+turn is incorporated into each stage of the generator by three dual-style-convolutional
+blocks. The generator predicts a sequence of three consecutive images for both
+the BF and GFP channels. The U-Net discriminator distinguishes between real and
+a fake input sequences by making both a scalar and a pixel-wise real/fake prediction.
+Standard residual discriminator blocks in gray and non-local blocks in blue.
