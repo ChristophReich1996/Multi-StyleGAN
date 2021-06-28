@@ -2,6 +2,8 @@
 [![arXiv](https://img.shields.io/badge/stat.ML-arXiv%3A2106.08285-B31B1B.svg)](https://arxiv.org/abs/2106.08285)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ChristophReich1996/Multi-StyleGAN/blob/master/LICENSE)
 
+**[Christoph Reich](https://github.com/ChristophReich1996), [Tim Prangemeier](https://www.bcs.tu-darmstadt.de/bcs_team/prangemeiertim.en.jsp), [Christian Wildner](https://www.bcs.tu-darmstadt.de/bcs_team/wildnerchristian.en.jsp) & [Heinz Koeppl](https://www.bcs.tu-darmstadt.de/bcs_team/koepplheinz.en.jsp)**
+
 <p align="center">
   This repository includes the <b>official</b> and <b>maintained</b> implementation of the paper <a href="https://arxiv.org/abs/2106.08285"> Multi-StyleGAN: Towards Image-Based Simulation of Time-Lapse Live-Cell Microscopy</a>
 </p>
