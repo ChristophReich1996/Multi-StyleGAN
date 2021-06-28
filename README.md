@@ -5,7 +5,7 @@
 **[Christoph Reich*](https://github.com/ChristophReich1996), [Tim Prangemeier*](https://www.bcs.tu-darmstadt.de/bcs_team/prangemeiertim.en.jsp), [Christian Wildner](https://www.bcs.tu-darmstadt.de/bcs_team/wildnerchristian.en.jsp) & [Heinz Koeppl](https://www.bcs.tu-darmstadt.de/bcs_team/koepplheinz.en.jsp)**<br/>
 Christoph Reich and Tim Prangemeier - both authors contributed equally
 
-<img src="/github/latent_space_interpolation.gif"  alt="1" width = 288px height = 96px >
+<img src="/github/latent_space_interpolation.gif"  alt="1" width = 288px height = 192px >
 
 <p align="center">
   This repository includes the <b>official</b> and <b>maintained</b> <a href="https://pytorch.org/">PyTorch</a> implementation of the paper <a href="https://arxiv.org/abs/2106.08285"> Multi-StyleGAN: Towards Image-Based Simulation of Time-Lapse Live-Cell Microscopy</a>
