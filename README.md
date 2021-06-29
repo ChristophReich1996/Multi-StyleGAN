@@ -96,6 +96,15 @@ of [Kornia](https://kornia.github.io/) or [Torchvision](https://pytorch.org/visi
 
 ## Usage
 
+To train Multi-StyleGAN run the following command:
+
+```shell script
+ python -W ingore train_gan.py --cuda_devices "0, 1, 2, 3" --data_parallel --path_to_data "/60x_10BF_200GFP_200RFP20_3Z_10min_cropped_checked"
+```
+
+Dataset path and cuda devices may differ on other systems!
+To perform training runs with different settings use the command line arguments of the `[train_gan.py](train_gan.py)` file.
+
 ## Trained Model
 
 **The checkpoint of our trained Multi-StyleGAN is available at [this url]().**
