@@ -171,7 +171,8 @@ fabrication, and Tim Kircher, [Tizian Dege](https://github.com/TixXx1337), and
 [Florian Schwald](https://github.com/FlorianSchwald59) for aid with the data preparation.
 
 We also thank [piergiaj](https://github.com/piergiaj) for providing a [PyTorch i3d](https://github.com/piergiaj/pytorch-i3d) 
-implementation and trained models, which we used to compute the FVD score.
+implementation and trained models, which we used to compute the FVD score. The used code is indicated and is available 
+under the [original licence](https://github.com/piergiaj/pytorch-i3d/blob/master/LICENSE.txt).
 
 ## References
 
