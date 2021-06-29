@@ -114,12 +114,12 @@ the discriminator optimizer state (`"discriminator_optimizer"`), and the path-le
 To train Multi-StyleGAN in the proposed setting run the following command:
 
 ```shell script
- python -W ingore train_gan.py --cuda_devices "0, 1, 2, 3" --data_parallel --path_to_data "/60x_10BF_200GFP_200RFP20_3Z_10min_cropped_checked"
+ python -W ingore train_gan.py --cuda_devices "0, 1, 2, 3" --data_parallel --path_to_data "60x_10BF_200GFP_200RFP20_3Z_10min"
 ```
 
 Dataset path and cuda devices may differ on other systems!
 To perform training runs with different settings use the command line arguments of the [`train_gan.py`](train_gan.py) file.
-The [`train_gan.py`](train_gan.py) takes the following command line arguments.
+The [`train_gan.py`](train_gan.py) takes the following command line arguments:
 
 |Argument | Default value | Info|
 |--- | --- | ---|
@@ -135,7 +135,43 @@ The [`train_gan.py`](train_gan.py) takes the following command line arguments.
 | --no_top_k (binary flag) | False | Binary flag. If set no top-k is utilized. |
 | --no_ada (binary flag) | False | Binary flag. If set no adaptive discriminator augmentation is utilized. |
 
+To generate samples of the trained Multi-StyleGAN use the [`get_gan_samples.py`](scripts/get_gan_samples.py) script.
+
+```shell script
+ python -W ingore scripts/get_gan_samples.py --cuda_devices "0" --load_checkpoint "checkpoint_100.pt"
+```
+
+This script takes the following command line arguments:
+
+|Argument | Default value | Info|
+|--- | --- | ---|
+| --cuda_devices (str) | `"0"` | String of cuda device indexes to be used. |
+| --samples (int) | `100` | Number of samples to be generated. |
+| --load_checkpoint (str) | `"checkpoint_100.pt"` | Path to checkpoint to be loaded. |
+
+To generate a latent space interpolation use the [`gan_latent_space_interpolation.py`](scripts/gan_latent_space_interpolation.py) script.
+Generating the final `.mp4` video `ffmpeg` is required.
+
+```shell script
+ python -W ingore scripts/gan_latent_space_interpolation.py --cuda_devices "0" --load_checkpoint "checkpoint_100.pt"
+```
+
+This script takes the following command line arguments:
+
+|Argument | Default value | Info|
+|--- | --- | ---|
+| --cuda_devices (str) | `"0"` | String of cuda device indexes to be used. |
+| --load_checkpoint (str) | `"checkpoint_100.pt"` | Path to checkpoint to be loaded. |
+
 ## Acknowledgements
+
+We thank [Markus Baier](https://www.bcs.tu-darmstadt.de/bcs_team/index.en.jsp) for aid with the computational setup, 
+[Klaus-Dieter Voss](https://www.bcs.tu-darmstadt.de/bcs_team/index.en.jsp) for aid with the microfluidics 
+fabrication, and Tim Kircher, [Tizian Dege](https://github.com/TixXx1337), and 
+[Florian Schwald](https://github.com/FlorianSchwald59) for aid with the data preparation.
+
+We also thank [piergiaj](https://github.com/piergiaj) for providing a [PyTorch i3d](https://github.com/piergiaj/pytorch-i3d) 
+implementation and trained models, which we used to compute the FVD score.
 
 ## References
 

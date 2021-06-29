@@ -1,25 +1,35 @@
-# Script to compute test metrics for GAN
+# Script generate latent space interpolation
+from argparse import ArgumentParser
+
+# Manage command line arguments
+parser = ArgumentParser()
+parser.add_argument("--cuda_devices", default="0", type=str,
+                    help="String of cuda device indexes to be used. Indexes must be separated by a comma.")
+parser.add_argument("--load_checkpoint", default="checkpoint_100.pt", type=str,
+                    help="Path to checkpoint to be loaded.")
+
+# Get arguments
+args = parser.parse_args()
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from tqdm import tqdm
-import kornia
 import torchvision
-import numpy as np
 import os
 
-from generation import TwinGenerator2D, style_gan_2_2d_generator_config
+# Set cuda devices
+os.environ["CUDA_VISIBLE_DEVICES"] = args.cuda_devices
 
-torch.random.manual_seed(1996)
+from multi_stylegan import MultiStyleGANGenerator, multi_style_gan_generator_config
+
+# torch.random.manual_seed(1904)
 
 if __name__ == '__main__':
     with torch.no_grad():
         # Init and load generator
-        generator = nn.DataParallel(TwinGenerator2D(config=style_gan_2_2d_generator_config).cuda())
-        generator.load_state_dict(
-            torch.load(
-                "/home/creich/Neural_Simulation_of_TLFM_Experiments/trained_models/25_01_2021__09_20_41_gan/checkpoint_100.pt")[
-                "generator_ema"])
+        generator = nn.DataParallel(MultiStyleGANGenerator(config=multi_style_gan_generator_config).cuda())
+        generator.load_state_dict(torch.load(args.load_checkpoint)["generator_ema"])
         # Generator into eval mode
         generator.eval()
         # Init latent vector
@@ -46,7 +56,7 @@ if __name__ == '__main__':
         # Save frames
         for index in range(video.shape[0]):
             torchvision.utils.save_image(tensor=video[index][None],
-                                         fp="video_gan_2/frame_{}.png".format(str(index).zfill(5)))
+                                         fp="video_gan/frame_{}.png".format(str(index).zfill(5)))
         # Make video
         os.system(
-            "ffmpeg -r 60 -f image2 -s 768x512 -i video_gan_2/frame_%05d.png -vcodec libx264 -crf 25  -pix_fmt yuv420p video_gan_2.mp4")
+            "ffmpeg -r 60 -f image2 -s 768x512 -i video_gan/frame_%05d.png -vcodec libx264 -crf 25  -pix_fmt yuv420p video_gan_2.mp4")
