@@ -1,7 +1,7 @@
 https://download.pytorch.org/whl/cu111/torch-1.8.1%2Bcu111-cp36-cp36m-linux_x86_64.whl
 numpy==1.19.5
 torchvision==0.8.2
-opencv-python==4.5.1
+opencv-python==4.5.2.54
 matplotlib==3.3.2
 tqdm==4.56.0
 scipy==1.5.2
