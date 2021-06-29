@@ -94,16 +94,11 @@ Using other PyTorch and CUDA version newer than [PyTorch 1.7.0](https://pytorch.
 CUDA 10.1 should also be possible. Please note using a different PyTorch version eventually requires a different version
 of [Kornia](https://kornia.github.io/) or [Torchvision](https://pytorch.org/vision/stable/index.html).
 
-## Usage
+## Data
 
-To train Multi-StyleGAN in the proposed setting run the following command:
+**Our proposed time-lapse fluorescent microscopy is available at [this url](https://arxiv.org/pdf/2106.08285.pdf).**
 
-```shell script
- python -W ingore train_gan.py --cuda_devices "0, 1, 2, 3" --data_parallel --path_to_data "/60x_10BF_200GFP_200RFP20_3Z_10min_cropped_checked"
-```
-
-Dataset path and cuda devices may differ on other systems!
-To perform training runs with different settings use the command line arguments of the [`train_gan.py`](train_gan.py) file.
+The dataset includes 9696 images structured in sequences of both brightfield and green fluorescent protein (GFP) channels at a resolution of 256 × 256.
 
 ## Trained Model
 
@@ -114,11 +109,31 @@ The checkpoint (PyTorch state dict) includes the EMA generator weights (`"genera
 the discriminator optimizer state (`"discriminator_optimizer"`), and the path-length regularization states 
 (`"path_length_regularization"`)
 
-## Data
+## Usage
 
-**Our proposed time-lapse fluorescent microscopy is available at [this url](https://arxiv.org/pdf/2106.08285.pdf).**
+To train Multi-StyleGAN in the proposed setting run the following command:
 
-The dataset includes 9696 images structured in sequences of both brightfield and green fluorescent protein (GFP) channels at a resolution of 256 × 256.
+```shell script
+ python -W ingore train_gan.py --cuda_devices "0, 1, 2, 3" --data_parallel --path_to_data "/60x_10BF_200GFP_200RFP20_3Z_10min_cropped_checked"
+```
+
+Dataset path and cuda devices may differ on other systems!
+To perform training runs with different settings use the command line arguments of the [`train_gan.py`](train_gan.py) file.
+The [`train_gan.py`](train_gan.py) takes the following command line arguments.
+
+|Argument | Default value | Info|
+|--- | --- | ---|
+| --cuda_devices (str) | `"0, 1, 2, 3"` | String of cuda device indexes to be used. |
+| --batch_size (int) | `24` | Batch size to be utilized while training. |
+| --data_parallel (binary flag) | False | Binary flag. If set data parallel is utilized. |
+| --epochs (int) | 100 | Number of epochs to perform while training. |
+| --lr_generator (float) | `2e-04` | Learning rate of the generator network. |
+| --lr_discriminator (float) | `6e-04` | Learning rate of the discriminator network. |
+| --path_to_data (str) | `"./60x_10BF_200GFP_200RFP20_3Z_10min"` | Path to dataset. |
+| --load_checkpoint (str) | `""` | Path to checkpoint to be loaded. If `""` no loading is performed |
+| --resume_training (binary flag) | False | Binary flag. If set training is resumed and so cut mix aug/reg and wrong order aug is used. |
+| --no_top_k (binary flag) | False | Binary flag. If set no top-k is utilized. |
+| --no_ada (binary flag) | False | Binary flag. If set no adaptive discriminator augmentation is utilized. |
 
 ## Acknowledgements
 

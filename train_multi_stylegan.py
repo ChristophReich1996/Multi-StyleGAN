@@ -14,7 +14,7 @@ parser.add_argument("--lr_generator", default=2e-04, type=float,
                     help="Learning rate of the generator network.")
 parser.add_argument("--lr_discriminator", default=6e-04, type=float,
                     help="Learning rate of the discriminator network.")
-parser.add_argument("--path_to_data", default="./60x_10BF_200GFP_200RFP20_3Z_10min_cropped_checked",
+parser.add_argument("--path_to_data", default="./60x_10BF_200GFP_200RFP20_3Z_10min",
                     type=str, help="Path to dataset.")
 parser.add_argument("--load_checkpoint", default="", type=str,
                     help="Path to checkpoint to be loaded.")
