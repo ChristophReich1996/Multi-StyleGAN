@@ -130,7 +130,7 @@ The [`train_gan.py`](train_gan.py) takes the following command line arguments:
 | --lr_generator (float) | `2e-04` | Learning rate of the generator network. |
 | --lr_discriminator (float) | `6e-04` | Learning rate of the discriminator network. |
 | --path_to_data (str) | `"./60x_10BF_200GFP_200RFP20_3Z_10min"` | Path to dataset. |
-| --load_checkpoint (str) | `""` | Path to checkpoint to be loaded. If `""` no loading is performed |
+| --load_checkpoint (str) | `""` | Path to checkpoint to be loaded. If `""` no loading is performed. |
 | --resume_training (binary flag) | False | Binary flag. If set training is resumed and so cut mix aug/reg and wrong order aug is used. |
 | --no_top_k (binary flag) | False | Binary flag. If set no top-k is utilized. |
 | --no_ada (binary flag) | False | Binary flag. If set no adaptive discriminator augmentation is utilized. |
