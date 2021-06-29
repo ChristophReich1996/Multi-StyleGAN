@@ -1,9 +1,9 @@
-torch==1.7.1
-numpy==1.19.2
+torch==1.8.1
+numpy==1.19.5
 torchvision==0.8.2
-opencv-python==4.4.0.42
+opencv-python==4.5.1
 matplotlib==3.3.2
-tqdm==4.54.1
+tqdm==4.56.0
 scipy==1.5.2
-kornia==0.4.0
+kornia==0.4.1
 rtpt==0.0.4
