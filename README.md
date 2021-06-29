@@ -103,7 +103,7 @@ To train Multi-StyleGAN in the proposed setting run the following command:
 ```
 
 Dataset path and cuda devices may differ on other systems!
-To perform training runs with different settings use the command line arguments of the `[train_gan.py](train_gan.py)` file.
+To perform training runs with different settings use the command line arguments of the [`train_gan.py`](train_gan.py) file.
 
 ## Trained Model
 
