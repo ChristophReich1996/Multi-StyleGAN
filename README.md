@@ -89,8 +89,10 @@ cd multi_stylegan/op_static
 python setup.py install
 ```
 
-The code is tested on [PyTorch 1.7.1](https://pytorch.org/get-started/previous-versions/) and CUDA 11.1! Using other 
-PyTorch and CUDA version newer than PyTorch 1.7.0 and CUDA 11.0 should also be possible.
+The code is tested with [PyTorch 1.8.1](https://pytorch.org/get-started/locally/) and CUDA 11.1 on Ubuntu! 
+Using other PyTorch and CUDA version newer than [PyTorch 1.7.0](https://pytorch.org/get-started/previous-versions/) and 
+CUDA 10.1 should also be possible. Please note using a different PyTorch version eventually requires a different version
+of [Kornia](https://kornia.github.io/) or [Torchvision](https://pytorch.org/vision/stable/index.html).
 
 ## Usage
 
