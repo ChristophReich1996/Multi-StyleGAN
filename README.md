@@ -49,7 +49,7 @@ experimental techniques such as online monitoring or control of cells.*
 transforms the input noise vector <img src="https://render.githubusercontent.com/render/math?math=z\sim \mathcal{N}_{512}(0, 1)"> into a latent vector <img src="https://render.githubusercontent.com/render/math?math=w\in\mathcal{W}">, which in
 turn is incorporated into each stage of the generator by three dual-style-convolutional
 blocks. The generator predicts a sequence of three consecutive images for both
-the brightfield and green fluorescent protein channels. The U-Net discriminator distinguishes between real and
+the brightfield and green fluorescent protein channels. The U-Net discriminator [2] distinguishes between real and
 a fake input sequences by making both a scalar and a pixel-wise real/fake prediction.
 Standard residual discriminator blocks in gray and non-local blocks in blue.
 
@@ -150,7 +150,7 @@ This script takes the following command line arguments:
 | --load_checkpoint (str) | `"checkpoint_100.pt"` | Path to checkpoint to be loaded. |
 
 To generate a latent space interpolation use the [`gan_latent_space_interpolation.py`](scripts/gan_latent_space_interpolation.py) script.
-Generating the final `.mp4` video `ffmpeg` is required.
+For producing the final `.mp4` video [`ffmpeg`](https://www.ffmpeg.org/) is required.
 
 ```shell script
  python -W ingore scripts/gan_latent_space_interpolation.py --cuda_devices "0" --load_checkpoint "checkpoint_100.pt"
@@ -185,3 +185,13 @@ under the [original licence](https://github.com/piergiaj/pytorch-i3d/blob/master
     year={2020}
 }
 ```
+```bibtex
+[2] @inproceedings{Schonfeld2020,
+    title={A u-net based discriminator for generative adversarial networks},
+    author={Schonfeld, Edgar and Schiele, Bernt and Khoreva, Anna},
+    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+    pages={8207--8216},
+    year={2020}
+}
+```
+
