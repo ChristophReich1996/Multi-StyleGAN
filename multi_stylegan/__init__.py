@@ -3,7 +3,7 @@ from .u_net_2d_discriminator import Discriminator as MultiStyleGANDiscriminator
 # Import twin 2D StyleGAN2 generator
 from .multi_stylegan_generator import Generator as MultiStyleGANGenerator
 # Import configs
-from .config import generation_hyperparameters, twin_style_gan_2_2d_generator_config, u_net_2d_discriminator_config
+from .config import generation_hyperparameters, multi_style_gan_generator_config, u_net_2d_discriminator_config
 # Import model wrapper
 from .model_wrapper import ModelWrapper
 # Import data logger

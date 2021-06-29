@@ -13,7 +13,7 @@ u_net_2d_discriminator_config: Dict[str, Any] = {
 }
 
 # StyleGAN 2 2D generator hyperparameters for resolution
-twin_style_gan_2_2d_generator_config: Dict[str, Any] = {
+multi_style_gan_generator_config: Dict[str, Any] = {
     # Channels utilized in each resolution stage
     "channels": (512, 512, 512, 512, 512, 512, 512),
     # Channel factor

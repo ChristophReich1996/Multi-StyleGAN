@@ -1,9 +1,7 @@
-from typing import Optional
-
 import torch
 
 
-def normalize_0_1(tensor: torch.Tensor, max: Optional[float] = None, min: Optional[float] = None) -> torch.Tensor:
+def normalize_0_1(tensor: torch.Tensor, max: float = None, min: float = None) -> torch.Tensor:
     """
     Function normalizes a given input tensor channel-wise to a rage between zero and one.
     :param tensor: (torch.Tensor) Input tensor of the shape [channels, height, width]

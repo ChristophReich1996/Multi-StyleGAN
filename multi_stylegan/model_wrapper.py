@@ -126,7 +126,7 @@ class ModelWrapper(object):
         # Save parameters
         self.epochs = epochs
         # Init RTPT
-        rtpt = RTPT(name_initials="CR", experiment_name="DeepFovea++", max_iterations=epochs)
+        rtpt = RTPT(name_initials="CR", experiment_name="Multi-StyleGAN", max_iterations=epochs)
         # Start RTPT
         rtpt.start()
         # Models to device
