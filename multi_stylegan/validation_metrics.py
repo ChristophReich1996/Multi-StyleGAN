@@ -368,7 +368,7 @@ class FVD(object):
                  data_parallel: bool = True, batch_size: int = 1,
                  data_samples: int = 5000, no_rfp: bool = False,
                  no_gfp: bool = False,
-                 network_path: str = "generation/pretrained_i3d/rgb_imagenet.pt") -> None:
+                 network_path: str = "multi_stylegan/pretrained_i3d/rgb_imagenet.pt") -> None:
         """
         Constructor method
         :param device: (Union[str, torch.device]) Device to be utilized
