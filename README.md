@@ -96,7 +96,14 @@ of [Kornia](https://kornia.github.io/) or [Torchvision](https://pytorch.org/visi
 
 ## Usage
 
-## Trained Models
+## Trained Model
+
+**The checkpoint of our trained Multi-StyleGAN is available at [this url]().**
+
+The checkpoint (PyTorch state dict) includes the EMA generator weights (`"generator_ema"`), the generator weights 
+(`"generator"`), the generator optimizer state (`"generator_optimizer"`), the discriminator weights (`"discriminator"`),
+the discriminator optimizer state (`"discriminator_optimizer"`), and the path-length regularization states 
+(`"path_length_regularization"`)
 
 ## Data
 
