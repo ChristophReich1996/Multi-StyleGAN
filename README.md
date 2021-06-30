@@ -5,7 +5,7 @@
 **[Christoph Reich*](https://github.com/ChristophReich1996), [Tim Prangemeier*](https://www.bcs.tu-darmstadt.de/bcs_team/prangemeiertim.en.jsp), [Christian Wildner](https://www.bcs.tu-darmstadt.de/bcs_team/wildnerchristian.en.jsp) & [Heinz Koeppl](https://www.bcs.tu-darmstadt.de/bcs_team/koepplheinz.en.jsp)**<br/>
 *Christoph Reich and Tim Prangemeier - both authors contributed equally
 
-## [Project Page]() | [Paper](https://arxiv.org/abs/2106.08285) | [Dataset]() | [Video]() | [Slides]() |
+## [Project Page]() | [Paper](https://arxiv.org/abs/2106.08285) |
 
 <p align="center">
   <img src="/github/latent_space_interpolation.gif"  alt="1" width = 288px height = 192px >
