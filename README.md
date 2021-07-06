@@ -98,7 +98,7 @@ of [Kornia](https://kornia.github.io/) or [Torchvision](https://pytorch.org/visi
 
 **Our proposed time-lapse fluorescent microscopy is available at [this url](https://arxiv.org/pdf/2106.08285.pdf).**
 
-The dataset includes 9696 images structured in sequences of both brightfield and green fluorescent protein (GFP) channels at a resolution of 256 × 256.
+The dataset includes 9696 images structured in sequences of both brightfield and green fluorescent protein (GFP) channels at a resolution of 256 × 256. Data loader classes can be found in the python package [dataset](dataset).
 
 ## Trained Model
 
