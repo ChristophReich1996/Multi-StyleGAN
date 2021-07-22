@@ -1,6 +1,7 @@
 # Multi-StyleGAN: Towards Image-Based Simulation of Time-Lapse Live-Cell Microscopy
 [![arXiv](https://img.shields.io/badge/cs.CV-arXiv%3A2106.08285-B31B1B.svg)](https://arxiv.org/abs/2106.08285)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ChristophReich1996/Multi-StyleGAN/blob/master/LICENSE)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/multi-stylegan-towards-image-based-simulation/tflm-sequence-generation-on-tlfm-dataset)](https://paperswithcode.com/sota/tflm-sequence-generation-on-tlfm-dataset?p=multi-stylegan-towards-image-based-simulation)
 
 **[Christoph Reich*](https://github.com/ChristophReich1996), [Tim Prangemeier*](https://www.bcs.tu-darmstadt.de/bcs_team/prangemeiertim.en.jsp), [Christian Wildner](https://www.bcs.tu-darmstadt.de/bcs_team/wildnerchristian.en.jsp) & [Heinz Koeppl](https://www.bcs.tu-darmstadt.de/bcs_team/koepplheinz.en.jsp)**<br/>
 *Christoph Reich and Tim Prangemeier - both authors contributed equally
