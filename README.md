@@ -151,7 +151,7 @@ This script takes the following command line arguments:
 | --load_checkpoint (str) | `"checkpoint_100.pt"` | Path to checkpoint to be loaded. |
 
 To generate a latent space interpolation use the [`gan_latent_space_interpolation.py`](scripts/gan_latent_space_interpolation.py) script.
-For producing the final `.mp4` video [`ffmpeg`](https://www.ffmpeg.org/) is required.
+For producing the final `.mp4` video [ffmpeg](https://www.ffmpeg.org/) is required.
 
 ```shell script
  python -W ingore scripts/gan_latent_space_interpolation.py --cuda_devices "0" --load_checkpoint "checkpoint_100.pt"
