@@ -103,7 +103,7 @@ The dataset includes 9696 images structured in sequences of both brightfield and
 
 ## Trained Model
 
-**The checkpoint of our trained Multi-StyleGAN is available at [this url]().**
+**The checkpoint of our trained Multi-StyleGAN is available at [this url](https://tudatalib.ulb.tu-darmstadt.de/bitstream/handle/tudatalib/2879/checkpoint_100.pt?sequence=1&isAllowed=n).**
 
 The checkpoint (PyTorch state dict) includes the EMA generator weights (`"generator_ema"`), the generator weights 
 (`"generator"`), the generator optimizer state (`"generator_optimizer"`), the discriminator weights (`"discriminator"`),
