@@ -6,7 +6,7 @@
 **[Christoph Reich*](https://github.com/ChristophReich1996), [Tim Prangemeier*](https://www.bcs.tu-darmstadt.de/bcs_team/prangemeiertim.en.jsp), [Christian Wildner](https://www.bcs.tu-darmstadt.de/bcs_team/wildnerchristian.en.jsp) & [Heinz Koeppl](https://www.bcs.tu-darmstadt.de/bcs_team/koepplheinz.en.jsp)**<br/>
 *Christoph Reich and Tim Prangemeier - both authors contributed equally
 
-## | [Project Page](https://christophreich1996.github.io/multi_stylegan) | [Paper](https://arxiv.org/abs/2106.08285) | [Dataset](https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2880) |
+## | [Project Page](https://christophreich1996.github.io/multi_stylegan) | [Paper](https://arxiv.org/abs/2106.08285) | [Dataset](https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2880?locale-attribute=en_US) |
 
 <p align="center">
   <img src="/github/latent_space_interpolation.gif"  alt="1" width = 288px height = 192px >
@@ -97,13 +97,13 @@ of [Kornia](https://kornia.github.io/) or [Torchvision](https://pytorch.org/visi
 
 ## Data
 
-**Our proposed time-lapse fluorescent microscopy is available at [this url](https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2880).**
+**Our proposed time-lapse fluorescent microscopy is available at [this url](https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2880?locale-attribute=en_US).**
 
 The dataset includes 9696 images structured in sequences of both brightfield and green fluorescent protein (GFP) channels at a resolution of 256 × 256. Data loader classes can be found in the python package [dataset](dataset).
 
 ## Trained Model
 
-**The checkpoint of our trained Multi-StyleGAN is available at [this url](https://tudatalib.ulb.tu-darmstadt.de/bitstream/handle/tudatalib/2879/checkpoint_100.pt?sequence=1&isAllowed=n).**
+**The checkpoint of our trained Multi-StyleGAN is available at [this url](https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2879?locale-attribute=en_US).**
 
 The checkpoint (PyTorch state dict) includes the EMA generator weights (`"generator_ema"`), the generator weights 
 (`"generator"`), the generator optimizer state (`"generator_optimizer"`), the discriminator weights (`"discriminator"`),
