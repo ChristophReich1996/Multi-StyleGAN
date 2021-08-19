@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: "Code of the paper: Multi-StyleGAN: Towards Image-Based Simulation of Time-Lapse Live-Cell Microscopy"
 authors:
-  - family-names: Prangemeier
-    given-names: Tim
   - family-names: Reich
     given-names: Christoph
+  - family-names: Prangemeier
+    given-names: Tim
   - family-names: Wildner
     given-names: Christian
   - family-names: Koeppl
