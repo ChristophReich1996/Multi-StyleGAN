@@ -13,7 +13,7 @@
 </p>
   
 <p align="center">
-  This repository includes the <b>official</b> and <b>maintained</b> <a href="https://pytorch.org/">PyTorch</a> implementation of the paper <a href="https://arxiv.org/abs/2106.08285"> Multi-StyleGAN: Towards Image-Based Simulation of Time-Lapse Live-Cell Microscopy</a>
+  This repository includes the <b>official</b> and <b>maintained</b> <a href="https://pytorch.org/">PyTorch</a> implementation of the paper <a href="https://arxiv.org/abs/2106.08285"> Multi-StyleGAN: Towards Image-Based Simulation of Time-Lapse Live-Cell Microscopy</a>.
 </p>
 
 ## Abstract
