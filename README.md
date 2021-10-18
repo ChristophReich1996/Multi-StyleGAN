@@ -37,7 +37,7 @@ experimental techniques such as online monitoring or control of cells.*
 @inproceedings{Reich2021,
     title={{Multi-StyleGAN: Towards Image-Based Simulation of Time-Lapse Live-Cell Microscopy}},
     author={Reich, Christoph and Prangemeier, Tim and Wildner, Christian and Koeppl, Heinz},
-    booktitle={{International Conference on Medical image computing and computer-assisted intervention (in press)}},
+    booktitle={{International Conference on Medical image computing and computer-assisted intervention}},
     year={2021},
     organization={Springer}
 }
