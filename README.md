@@ -6,7 +6,7 @@
 **[Christoph Reich*](https://github.com/ChristophReich1996), [Tim Prangemeier*](https://www.bcs.tu-darmstadt.de/bcs_team/prangemeiertim.en.jsp), [Christian Wildner](https://www.bcs.tu-darmstadt.de/bcs_team/wildnerchristian.en.jsp) & [Heinz Koeppl](https://www.bcs.tu-darmstadt.de/bcs_team/koepplheinz.en.jsp)**<br/>
 *Christoph Reich and Tim Prangemeier - both authors contributed equally
 
-## | [Project Page](https://christophreich1996.github.io/multi_stylegan) | [Paper](https://arxiv.org/abs/2106.08285) | [Dataset](https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2880?locale-attribute=en_US) |
+## | [Project Page](https://christophreich1996.github.io/multi_stylegan) | [Paper](https://arxiv.org/abs/2106.08285) | [Dataset](https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/2880?locale-attribute=en_US) | [Poster](https://christophreich1996.github.io/pdfs/MICCAI_Poster_1677.pdf) | [Slides](https://christophreich1996.github.io/pdfs/MICCAI_Presentation_1677.pdf) |
 
 <p align="center">
   <img src="/github/latent_space_interpolation.gif"  alt="1" width = 288px height = 192px >
